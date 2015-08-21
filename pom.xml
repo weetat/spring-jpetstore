@@ -101,6 +101,7 @@
                 <version>${org.apache.tomcat.maven.version}</version>
                 <configuration>
                     <uriEncoding>UTF-8</uriEncoding>
+                    <port>8889</port>
                 </configuration>
             </plugin>
         </plugins>
@@ -658,7 +659,13 @@
             <scope>provided</scope>
         </dependency>
         <!-- == End Tomcat == -->
-
+        <!-- == Begin Oracle == -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc14</artifactId>
+			<version>10.2.0.1.0</version>
+		</dependency>
+		<!-- == End Oracle == -->
     </dependencies>
     <properties>
         <!-- == Google == -->
